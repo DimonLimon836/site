@@ -116,17 +116,90 @@ header {
 
 /*about-section*/
 
-.about {
+.about{
     font-family: "Bubbler One", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-info {
+    position: relative;
 }
 
 .about-card {
-    max-width: 300px;
+    max-width: 230px;
     border: 2px solid blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding: 1em 2em 3em 2em;
+    padding-bottom: 2em;
+    position: absolute;
 }
 
+.about-card.first-card {
+    left: 10%;
+    top: 300px;
+}
+
+.about-card.second-card {
+    right: 10%;
+    top: 60px;
+}
+
+.about-card.third-card {
+    right: 10%;
+    top: 500px;
+}
+
+.about-image {
+    position: absolute;
+    left: 34%;
+    top: 50%;
+}
+
+.about-image img {
+    width: 500px;
+}
+
+
+/*footer*/
+
+footer {
+    background: blue;
+    color: white;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.footer-left p{
+    font-size: 18px;
+}
+
+.footer-center {
+    width: 400px;
+}
+
+.subscribe {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.subscribe button {
+    color: black;
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
